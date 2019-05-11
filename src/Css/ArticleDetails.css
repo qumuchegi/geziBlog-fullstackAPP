@@ -1,0 +1,223 @@
+
+#article-content{
+    line-height: 200%
+}
+#article-info #author{
+    font-size: 80%;
+    font-weight: lighter;
+    margin-left: 5%;
+}
+#comment-send  ,#reply-send {
+    background-color: rgba(124, 54, 221, 0.2);
+     
+}
+#comment-send #send-top, #reply-send #send-top{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+#comment-send #send-top img,#reply-send  #send-top img{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    margin-top:5px;
+    margin-left: 5px
+}
+
+#comment-send textarea,#reply-send textarea{
+    width:97%;
+    border:none;
+    margin-left: 1%;
+    font-size: 102%;
+}
+#send-button{
+    padding:1%;
+    border-radius: 3px;
+}
+#comment-list-input #comment-list{
+    background-color: rgba(124, 54, 221, 0.2);
+    border-radius: 4px;
+    margin-left:0;
+    padding-left:2%;
+    
+}
+#comment-list-input #comment-list li{
+    list-style: none;
+    border-bottom: solid 2px #555;
+    padding-top:2%;
+}
+.commenter-avatar-time{
+    display: flex;
+    justify-content: space-between;
+
+}
+.commenter-avatar-time .time{
+    color:#777;
+    font-size: 90%;
+   
+}
+.comment-content{
+    color:#555;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+.comment-replys-list{
+    background-color:  rgba(227,217,247);
+    margin-right: 2%;
+    padding-left:6%;
+    margin-bottom: 2%;
+    
+}
+.comment-replys-list .reply-item{
+    background-color: rgba(227,217,247);
+    border:solid 1.2px #444;
+    border-radius: 4px;
+}
+.comment-replys-list .reply-item .reply-content{
+    background-color:rgba(227,217,247);
+}
+.reply-top{
+    display: flex;
+    justify-content: space-between
+}
+@media screen and (min-width:500px){
+    #article-details-body{
+        
+    }
+    #article-info{
+        width:50%;
+        margin:3% 25%;
+        padding:6% 1%;
+        background-color: white;
+        border:solid 2px #eee
+    }
+    #article-info #title{
+        font-size: 120%;
+    }
+    #article-info #time{
+        color:#aaa;
+        font-weight: lighter;
+        margin-left: 5%;
+        font-size: 80%
+    }
+    #article-content h1,h2,h3,h4,h5{
+        font-size: 99%;
+    }
+    #article-content img{
+      width:100%
+    }
+    #praise-share-comment{
+        position: fixed;
+        left:15%;
+        top:20%;
+
+        
+        box-sizing: border-box;
+        flex-direction: column;
+    
+        display: flex;
+        justify-content: space-between;
+    }
+    #praise-share-comment>div{
+        background-color: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        text-align: center;
+        margin-top:20%;
+        box-shadow: 2px 2px 10px #999
+    }
+    #praise-share-comment>div:hover{
+        cursor: pointer;
+        color:rgb(84, 27, 163);
+    }
+    .fa-times{
+        margin: 1%;
+        padding:1%;
+        width:20px;
+        height: 20px;
+        border-radius: 20px;
+        text-align: center;
+        float: right
+    }
+   #send-button:hover {
+       cursor: pointer;
+       background-color: #eee;
+       color: dodgerblue
+   }
+   .fa-times:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color:red
+   }
+   .reply-button{
+       margin-right: 3%;
+   }
+   .reply-button:hover{
+       color:rgb(49, 145, 30)
+   }
+}
+@media screen and (max-width:500px){
+    #article-details-body{
+        padding-block-end: 20%;
+        padding-left:2%;
+        padding-right: 2%
+    }
+    #article-details-body #home-top{
+        display: none;
+    }
+    #article-info{
+        width:100%;
+        padding:2% 1%;
+        background-color: white
+    }
+    #article-info #title{
+        font-size: 120%;
+    }
+    #article-info #time{
+        color:#aaa;
+        font-weight: lighter;
+        margin-left: 5%;
+        font-size: 80%
+    }
+    #article-content h1,h2,h3,h4,h5{
+        font-size: 99%;
+    }
+    #article-content img{
+      width:100%
+    }
+    #praise-share-comment{
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-block-start: solid 1.5px #eee;
+        box-sizing: border-box;
+        width:100%;
+        padding:1% 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #praise-share-comment>div:active{
+        color: #eee
+
+    }
+    #send-button:active{
+        background-color: #eee;
+        color: dodgerblue
+    }
+    #comment-send{
+       
+        padding-bottom:20%;
+    }
+    .fa-times{
+        padding:1%;
+        width:20px;
+        height: 20px;
+        border-radius: 20px;
+        text-align: center;
+        float: right
+    }
+}

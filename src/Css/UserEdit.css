@@ -1,0 +1,29 @@
+.link{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    padding: 7% ;
+    box-sizing: border-box;
+    width:32%;
+    font-size: 80%;
+    margin-top:1%;
+    color:rgb(84, 27, 163);
+}
+.link:not(#blog-edit):not(#message):not(#column){
+    margin-left:2%
+
+}
+.link:active{
+    background-color: #eee
+}
+@media screen and (min-width:500px){
+    .link:hover{
+        background-color:  rgba(139, 140, 158, 0.2)
+    }
+}
+@media screen and (min-width:500px){
+    #user-edit-body{
+        
+    }
+}

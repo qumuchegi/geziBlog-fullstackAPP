@@ -1,0 +1,100 @@
+.input{
+    display: block;
+    width: 95.5%;
+    border: solid 1px #777;
+    border-radius: 3px;
+    padding:2%;
+    margin-top: 6%;
+    height:20px;
+    font-weight: bolder;
+    color:rgba(66,149,213);
+}
+.input-avatar{
+    width:86.5%;
+    background-color: #eee;
+    margin-top: 2%;
+}
+#submit{
+    width: 80%;
+    margin-top: 4%;
+    padding: 10%
+     
+}
+.select{
+    margin-top: 4%
+}
+#form{
+    margin-top: 10%;
+   
+    font-weight: bolder
+}
+
+@media screen and (max-width:500px){
+    #register-body{
+        padding-left: 3% ;
+        padding-right:3%;
+    }
+    #form h2{
+        display: none
+    }
+    #form h3{
+        display: none
+    }
+ #preview-avatar{
+     width:100px;
+     margin-top:2%;
+     margin-left: 30%
+ }
+ #avatar-label{
+    display: block;
+    text-align: center;
+    margin-top:5%;
+    border:solid 1px #555;
+    padding:1.5%;
+    border-radius: 5px;
+    color:rgb(102, 48, 177)
+}
+#avatar-label:active{
+    background-color: aliceblue
+}
+}
+@media screen and (min-width:500px){
+    #register-body{
+        margin-left:30%;
+        margin-right: 30%;
+        padding-left: 3% ;
+        padding-right:3%;
+        border:solid #eee;
+        border-radius: 6px;
+        background-color: rgb(175,159,198,0.3)
+    }
+    #form h2{
+        text-align: center;
+        font-size: 200%;
+        color: crimson
+    }
+    #form h3{
+        text-align: center;
+        color:rgb(102, 48, 177)
+    }
+    #preview-avatar{
+        width:50%;
+        margin-top:2%;
+        margin-left: 30%
+    }
+    #avatar-label{
+        display: block;
+        text-align: center;
+        margin-top:5%;
+        border:solid 1px #555;
+        padding:1.5%;
+        border-radius: 5px;
+        color:rgb(102, 48, 177)
+    }
+    #avatar-label:hover{
+        background-color: aliceblue
+    }
+}
+#title{
+    text-align: center
+}

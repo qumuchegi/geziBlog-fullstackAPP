@@ -1,0 +1,18 @@
+@media screen and (min-width:500px){
+    #use-history-body{
+        font-size: 70%;
+         
+        
+    }
+    #use-history-body span:hover span{
+        cursor: pointer;
+        color:white;
+        background-color: blueviolet;
+        border-radius: 3px;
+    }
+}
+@media screen and (max-width:500px){
+    #use-history-body{
+        display: none
+    }
+}

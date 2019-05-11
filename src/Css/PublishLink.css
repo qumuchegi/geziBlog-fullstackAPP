@@ -1,0 +1,60 @@
+@media screen and (max-width:500px){
+    #publish-link-body{
+        margin:5% 1%;
+        padding: 0
+    }
+  
+    #publish-link-body input, #publish-link-body textarea {
+        width:98%;
+        font-size: 120%;
+        padding: 1%;
+        border:solid 1px #aaa;
+        border-radius: 5px;
+        margin-top:2%;
+        background-color: #eee
+    }
+    #publish-button{
+        margin-block-start: 5%;
+        width:98%;
+        padding: 1%;
+        border-radius: 3px;
+        text-align: center;
+        background-color: white;
+        border:solid 2px rgb(84, 27, 163);
+        color:rgb(84, 27, 163);
+    }
+    #publish-button:hover{
+        color:white;
+        background-color: rgb(84, 27, 163);
+    }
+}
+@media screen and (min-width:500px){
+     #publish-link-body{
+         margin:10% 30%;
+         padding: 0
+     }
+     #publish-link-body input, #publish-link-body textarea {
+         width:100%;
+         font-size: 150%;
+         padding: 2%;
+         border:solid 2px #aaa;
+         border-radius: 5px;
+         margin-top:2%;
+         background-color: #eee
+     }
+     #publish-button{
+         margin-block-start: 5%;
+         margin-left: 0.5%;
+         width:100%;
+         padding: 1.6%;
+         border-radius: 3px;
+         text-align: center;
+         background-color: white;
+         border:solid 2px rgb(84, 27, 163);
+         color:rgb(84, 27, 163);
+     }
+     #publish-button:hover{
+         color:white;
+         background-color: rgb(84, 27, 163);
+     }
+}

@@ -1,0 +1,81 @@
+@media screen and (max-width:500px){
+    #upload-picture-body{
+        padding:1% 2%;
+        font-size: 80%
+    }
+    #upload-picture-body #really-upload img{
+        width:100px;
+        display: block;
+       
+    }
+    #upload-picture-body #really-upload>div{
+        border:solid 1px black;
+        padding: 2%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: baseline;
+        flex-direction: column;
+      
+    }
+    #upload-picture-body #really-upload>div>div{
+        margin-top:1%
+    }
+    #upload-picture-body #really-upload>div>div:first-child>img{
+        padding-left: 30%
+
+    }
+    #upload-picture-body .yes-no{
+        background-color: white;
+        border:solid 2px blueviolet;
+        border-radius: 4px;
+        text-align: center
+    }
+    #upload-picture-body .yes-no:active{
+        background-color: blueviolet;
+        color:white
+
+    }
+    #upload-picture-body #uploaded-path{
+        word-break: break-all;
+        color:rgba(12,123,44)
+    }
+}
+@media screen and (min-width:500px){
+    #upload-picture-body #really-upload img{
+        width:50px;
+        display: block;
+        
+    }
+    #upload-picture-body #really-upload>div{
+        border:solid 1px black;
+        padding: 2%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: baseline;
+        flex-direction: column;
+      
+    }
+    #upload-picture-body #really-upload>div>div{
+        margin-top:2%
+    }
+    #upload-picture-body #really-upload>div>div:first-child>img{
+        padding-left: 30%
+
+    }
+    #upload-picture-body .yes-no{
+        background-color: white;
+        border:solid 2px blueviolet;
+        border-radius: 4px;
+        text-align: center
+    }
+    #upload-picture-body .yes-no:hover{
+        background-color: blueviolet;
+        color:white
+
+    }
+    #upload-picture-body #uploaded-path{
+        word-break: break-all;
+        color:rgba(12,123,44)
+    }
+
+}

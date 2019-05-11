@@ -1,0 +1,67 @@
+@media screen and (min-width:500px){
+    .active-link-item-body  {
+        background-color: white;
+        padding: 2%;
+        border:solid 2px  #eee;
+  
+
+    }
+    .active-link-item-body:hover{
+        background-color: #eee
+    }
+    .link-username-time img{
+        width:40px;
+        height:40px;
+        border-radius: 40px
+    }
+    .active-link-item-body .link-username-time{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .active-link-item-body .link-username-time>div{
+        display: flex;
+        justify-content: space-around
+    }
+    .active-link-item-body .link-title{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    .active-link-item-body .link-link,.active-link-item-body .link-feel{
+        padding-left:10%
+    }
+}
+@media screen and (max-width:500px){
+    .active-link-item-body  {
+        border-top:solid 1.3px #eee;
+        border-bottom: solid 1.3px #eee;
+        padding: 2%;
+        border-radius: 5px
+
+    }
+    .active-link-item-body:active{
+        background-color:  #eee
+    }
+    .link-username-time img{
+        width:30px;
+        height:30px;
+        border-radius: 30px
+    }
+    .active-link-item-body .link-username-time{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .active-link-item-body .link-username-time>div{
+        display: flex;
+        justify-content: space-around
+    }
+    .active-link-item-body .link-title{
+        font-size: 90%;
+        font-weight: bold;
+    }
+    .active-link-item-body .link-link,.active-link-item-body .link-feel{
+        padding-left:10%;
+        font-size: 70%
+    }
+}

@@ -1,0 +1,45 @@
+
+.input{
+    display: block;
+    width: 98.5%;
+    margin-top: 3%;
+    height:20px;
+    font-weight: bolder;
+    color:rgba(66,149,213);
+}
+#login-form{
+    margin-top: 30%
+}
+@media screen and (min-width:500px){
+    #login-body{
+        padding-left: 3% ;
+        padding-right:3%;
+        margin-left: 30%;
+        margin-right: 30%;
+        border:solid #eee;
+        border-radius: 6px;
+        background-color: rgb(175,159,198,0.3)
+    }
+    #login-form h3{
+        text-align: center;
+        color:rgb(175,159,198)
+    }
+    #login-form h2{
+        text-align: center;
+        font-size: 200%;
+        color: crimson
+    }
+}
+@media screen and (max-width:500px){
+    #login-body{
+        padding-left: 3% ;
+        padding-right:3%;
+    }
+    #login-form h3{
+        display: none
+
+    }
+    #login-form h2{
+        display: none
+    }
+}

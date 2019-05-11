@@ -1,0 +1,24 @@
+
+@media screen and (max-width:500px){
+    #column-manage-content{
+      
+      
+        
+
+    }
+    #column-manage-body #home-top{
+        display: none
+    }
+   
+}
+@media screen and (min-width:500px){
+    #column-manage-content{
+        padding-top:7%;
+        padding-left:20%;
+        padding-right:30%
+        
+
+    }
+    
+   
+}

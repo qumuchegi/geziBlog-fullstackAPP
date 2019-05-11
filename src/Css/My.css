@@ -1,0 +1,25 @@
+
+@media screen and (min-width:500px){
+    #my-body{
+        padding-left: 20%;
+        padding-right: 30%;
+        padding-top:0.3%;
+       
+ 
+    }
+    #userinfo{
+        height: 30%;
+        display: table;
+    }
+}
+@media screen and (max-width:500px){
+    #my-body{
+        padding: 3%;
+        margin-top: 12%;
+        padding-block-end: 20%;
+    }
+    #userinfo{
+        height: 30%;
+        display: table;
+    }
+}

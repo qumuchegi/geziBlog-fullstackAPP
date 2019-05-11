@@ -1,0 +1,77 @@
+@media screen and (min-width:500px){
+    #blog-title-content-labels{
+        margin:10% 2%;
+        box-sizing: border-box;
+        width:43%;
+        float:left;
+    }
+    #blog-title-content-labels #republish{
+        display: flex;
+        justify-content: space-around;
+        margin-block-end: 4%
+    }
+    #blog-title-content-labels #republish>div{
+        background-color: white;
+        padding:2% 3%;
+        border:solid 1.5px blueviolet;
+        border-radius: 5px
+
+    }
+    #blog-title-content-labels #republish>div:hover{
+        background-color: blueviolet;
+        cursor: pointer;
+        color:white
+    }
+    #modify-blog-body #preview-body{
+        box-sizing: border-box;
+        margin:10% 2%;
+        width:45%;
+        float: right
+
+    }
+    #modify-blog-body #editor{
+        line-height: 190%;
+        
+    }
+    #modify-blog-body #preview-body #preview{
+        line-height: 140%
+    }
+    #modify-title-picture{
+        display: flex;
+        justify-content: space-between
+    }
+    #modify-title-picture input[type='text']{
+        width:90%;
+        border:solid 2px #eee;
+        padding:1%;
+        font-size: 120%
+    }
+
+}
+@media screen and (max-width:500px){
+     #modify-blog-body #home-top{
+         display: none;
+     }
+     #blog-title-content-labels {
+         padding:1% 2%
+     }
+     #blog-title-content-labels #republish{
+        display: flex;
+        justify-content: space-around;
+        margin-block-end: 4%
+    }
+    #blog-title-content-labels #republish>div{
+        background-color: white;
+        margin-top:1%;
+        padding:1% 3%;
+        border:solid 1.5px blueviolet;
+        border-radius: 5px
+
+    }
+    #blog-title-content-labels #republish>div:active{
+        background-color: blueviolet;
+        cursor: pointer;
+        color:white
+    }
+
+}

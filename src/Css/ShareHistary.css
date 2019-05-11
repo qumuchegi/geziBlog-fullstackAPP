@@ -1,0 +1,14 @@
+
+ @media screen and (min-width:500px){
+    #my-share-big-body #my-share-links, #my-share-big-body  #my-share-blogs{
+        margin-top: 7%;
+        margin-left:20%;
+        margin-right:20%
+    }
+ }
+ @media screen and (max-width:500px){
+     #my-share-big-body #home-top{
+         display: none
+
+     }
+ }

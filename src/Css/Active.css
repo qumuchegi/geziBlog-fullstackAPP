@@ -1,0 +1,130 @@
+ 
+
+.my-share-item .Link{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+.share-blog-title{
+    font-size: 110%
+}
+@media screen and (min-width:500px){
+    #active-link{
+      
+        padding-left: 20%;
+        padding-right: 30%;
+    }
+    #share{
+        padding-left: 20%;
+        padding-right: 30%;
+       
+    }
+    .my-share-item{
+        background-color: white;
+        margin-top: 2%;
+        border-radius: 3px;
+        padding: 2%;
+        border:solid 2px #eee
+    }
+    .my-share-item:hover{
+        background-color: #eee
+    }
+    #active-link-page-button{
+        display: flex;
+        justify-content: center;
+        margin-block-end: 3%
+    }
+    #share-top{
+        margin-top: 2%;
+        margin-left: 32.5%
+    }
+    #active-link-page-button>div,#share-top{
+        border:solid 1.2px #eee;
+        border-radius: 3px;
+        width:20%;
+        text-align: center;
+        padding:1% 2%
+    }
+    #active-link-page-button>div:hover{
+        cursor: pointer;
+        background-color: #eee
+
+    }
+    #activity-nav{
+        display: flex;
+        justify-content:  flex-start;
+        width:60%
+    }
+    #activity-nav>div{
+        display: inline-block;
+        text-align: center;
+        padding-block-start: 3%;
+        width:10%;
+        font-size: 120%
+    }
+    .activity-not-selected{
+        color:rgb(84, 27, 163);
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    .activity-not-selected:hover{
+        cursor: pointer;
+        color:rgb(84, 27, 163);
+        border-block-end: solid
+    }
+    .activity-selected{
+       
+        color:rgb(84, 27, 163);
+        padding-left:5%;
+        padding-right: 5%;
+        border-block-end: solid
+    }
+}
+@media screen and (max-width:500px){
+   
+    .my-share-item{
+        background-color: rgb(187, 165, 218);
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-radius: 3px;
+        padding: 2%
+    }
+    #active-body{
+        margin-top: 14%
+    }
+    #active-link-page-button{
+        display: flex;
+        justify-content: center;
+        margin-block-end: 3%
+    }
+    #share-top{
+        margin-top: 2%;
+        margin-left: 37%
+    }
+    #active-link-page-button>div,#share-top{
+        border:solid 1.2px #eee;
+        border-radius: 3px;
+        width:20%;
+        text-align: center;
+        padding:1% 2%
+    }
+    #active-link-page-button>div:hover{
+        cursor: pointer;
+        background-color: #eee
+
+    }
+    #activity-nav{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width:43%
+    }
+    .activity-not-selected{
+        color:rgb(84, 27, 163)
+    }
+    .activity-selected{
+        color:rgb(84, 27, 163);
+        border-block-end: solid
+    }
+}

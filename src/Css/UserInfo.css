@@ -1,0 +1,204 @@
+
+#short-profile{
+    display: flex;
+    justify-content: flex-start;
+   
+   
+}
+#avatar-container{
+   
+}
+
+ 
+.key{
+    background-color: rgb(84, 27, 163);
+    color:white;
+    border-radius: 0  4px 4px 0
+}
+.value{
+    float:right;
+    margin-right:3%;
+    font-size: 70%;
+}
+
+
+.touxiang-nologin{
+    box-sizing: border-box;
+    width:100%;
+    background-color: aqua
+}
+.info-nologin{
+    
+      background-color: aliceblue;
+}
+.button{
+    
+    padding: 4% 20.7%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+.button:active{
+    background-color: #eee
+}
+hr{
+    margin: 0;
+}
+
+
+@media screen and (max-width:500px){
+    .info{
+        padding: 3%;
+        background-color: white;
+        border-radius: 5px;
+    }
+    #short-profile #avatar-container img{
+        width:50px;
+        height: 50px;
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+    #profile-n-j{
+        width:30%;
+        color:#555;
+        margin-left:3%
+    }
+    #profile-name{
+        font-size: 120%
+    }
+    #exit-container{
+        width:20%;
+        
+     }
+     #modify-self-profile{
+         margin-left: 4%;
+         color:rgb(84, 27, 163)
+     }
+    
+     #modify-button{
+         font-size:90%;
+         border-radius:4px;
+     }
+     #exit-button{
+         color:rgb(84, 27, 163);
+         font-size:90%;
+         border-radius:4px;
+         margin-left: 30%
+     }
+     #exit-button:active{
+         background-color: #eee;
+     }
+     #modify-button:hover{
+         background-color: #eee;
+         cursor: pointer;
+     }
+    #more-info{
+   
+    }
+    .fa-ul {
+         display: flex;
+         justify-content: space-between
+    }
+    .fa-ul li{
+  
+        width:33%;
+       
+    }
+    .fa-ul li .fa{
+        margin-left: 42%
+    }
+    .fa-ul li  p{
+        text-align: center;
+        padding: 1%;
+  
+        margin: 0
+
+    }
+}
+@media screen and (min-width:500px){
+    .info{
+        padding: 3%;
+        background-color: white;
+        border:solid 2px #ddd;
+        border-radius: 5px;
+    }
+    #short-profile #avatar-container img{
+        width:50px;
+        height: 50px;
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+    #profile-n-j{
+        width:20%;
+        color:#555;
+        margin-left:3%;
+       
+    }
+    #exit-container{
+       width:20%;
+       margin-left: 30%
+    }
+    #exit-button:hover{
+        background-color: #eee;
+        cursor: pointer;
+        
+    }
+    #modify-self-profile{
+        margin-left: 4%
+    }
+    #modify-button{
+        font-size:110%;
+        border-radius:4px;
+    }
+    #exit-button{
+        color:rgb(84, 27, 163);
+        font-size:110%;
+        border-radius:4px;
+        margin-left: 40%
+    }
+    #exit-button:active{
+        background-color: #eee;
+    }
+    #modify-button:hover{
+        background-color: #eee;
+        cursor: pointer;
+    }
+    #profile-name{
+        font-size: 120%
+    }
+  
+    #more-container{
+        display: flex;
+        justify-content: flex-start
+    }
+    #more-profile{
+        width:60%;
+        
+    }
+    #more-info{
+        
+        width:40%
+    }
+    .fa-ul {
+        margin-left:0%
+    }
+    .fa-ul li{
+        display: inline-block;
+        width:25%;
+       
+    }
+    .fa-ul li .fa{
+        margin-left: 44%
+    }
+    .fa-ul li  p{
+        text-align: center;
+        padding: 1%;
+        
+        margin: 0
+
+    }
+    #modify-self-profile{
+        color:rgb(84, 27, 163)
+    }
+
+}

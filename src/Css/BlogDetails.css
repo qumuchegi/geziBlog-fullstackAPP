@@ -1,0 +1,344 @@
+#content {
+    word-break: break-all;
+    line-height: 150%
+}
+#interactions{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.interaction{
+    width:30%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 0.5%
+}
+code{
+    color: rgb(72,92,128)
+}
+pre{
+    background-color:  whitesmoke
+}
+.hljs-keyword{
+    color:  rgb(154,135,248)
+}
+.hljs-number{
+    color:rgb(217,99,79)
+}
+.hljs-function{
+    color: rgb(78,131,234)
+}
+.hljs-title{
+    color: rgb(78,131,234)
+}
+.hljs-params{
+    color:rgb(129,125,250)
+}
+.hljs-string{
+    color:rgb(151,195,121)
+}
+.hljs-attr{
+    color:rgb(191,97,114)
+}
+.hljs-built_in{
+    color:rgb(111,57,58)
+}
+#publish-time{
+    color:gray;
+    font-size: 90%;
+    margin-left: 5%;
+}
+#pinglun-container{
+    background-color: rgba(175,159,198,0.3);
+    margin-top:3%;
+    padding: 2%;
+    border-radius: 6px;
+}
+#avatar-pinglun{
+    width:8%;
+    border-radius: 40%;
+
+}
+#pinglun-input{
+    display: block;
+    width:98%;
+}
+#pinglun-textarea{
+    display: block;
+    width:98%;
+}
+
+.pinglun-Content{
+    font-size: 90%;
+    color:#222;
+    padding-left: 8%;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+.pinglun-time{
+    font-size: 80%;
+    color:#777;
+   margin-left: 2%
+}
+.this-comment-reply{
+    padding-left:5%;
+    font-size: 80%
+}
+.reply-item{
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top:2%;
+    padding-left :2%;
+    padding-right:2%;
+}
+pre{
+    overflow:scroll;
+}
+#not-login-comment{
+    font-size: 120%;
+    color:rgb(191,97,114);
+    margin: 5%
+}
+@media screen and (min-width:500px){
+    #blog-details-big-body #home-top{
+        position: relative;
+        z-index: 30;
+        padding-top:1%;
+        padding-block-end: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color:  white;
+        position: fixed;
+        top:0;
+        width:100%;
+    }
+    #blog-details-body{
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 10%;
+        padding-top:10%;
+        background-color: white;
+        margin-left: 20%;
+        margin-right: 20%;
+        border:solid 2px #eee
+    }
+    #title{
+        margin-left: 1%;
+        display: inline;
+        font-size: 130%;
+   }
+   #blog-details-avatar{
+       width:30px;
+       height: 30px;
+       border-radius: 30px
+   }
+   #publisherName{
+    color:gray;
+    margin-left: 3%;
+   }
+   #watch-blog-author{
+    margin-left:40%;
+    color:rgb(124, 172, 53);
+    border:solid rgb(124, 172, 53) 1px;
+    border-radius: 3px;
+    padding:2px 7px 2px 7px
+
+}
+#watch-blog-author:active{
+    background-color: #ddd
+}
+ 
+#content h1 ,h2,h3, h4,h5,p{
+    font-size: 97%
+}
+#publish-my-pinglun{
+ 
+    margin-top:2%
+}
+#publish-my-pinglun img{
+    width:30px;
+    height: 30px;
+    border-radius: 30px
+}
+#pinglun-show img,#send-my-reply img{
+    width:30px;
+    height: 30px;
+    border-radius: 30px
+}
+.pinglun-button{
+    float: right;
+    margin:0 2%;
+    color:black;
+    font-weight: bolder
+}
+.pinglun-button:hover{
+    color: crimson;
+    cursor: pointer;
+}
+#blog #content img{
+    width:100%
+}
+.reply-button,.send-reply-button{
+    margin-left: 20%;
+    padding: 1%;
+    font-size: 100%;
+    border-radius: 4px;
+    float:right;
+    font-weight: bolder;
+    
+}
+.send-reply-button{
+  
+}
+.reply-button:hover{
+    cursor: pointer;
+    color: crimson
+}
+.send-reply-button:hover{
+    cursor: pointer;
+    color:rgba(7, 180, 111, 0.555);
+}
+#i-want-to-pinglun{
+    background-color:#a587eb;
+    padding:0.4%;
+    border-radius:3px;
+     
+}
+#i-want-to-pinglun:active{
+    background-color: #ddd
+}
+#i-want-to-pinglun:hover{
+    cursor: pointer;
+    background-color: #ddd
+}
+#send-my-reply{
+    position: fixed;
+    bottom: 0;
+    left:20%;
+    right:20%;
+    background-color:  white;
+    color:black;
+    padding:1.5%;
+    box-shadow: 2px -2px 10px  #999;
+   
+}
+#send-my-reply .reply-button{
+    
+    margin:0 1%;
+    font-size: 110%
+}
+#send-my-reply .reply-button:hover{
+    color:crimson
+}
+}
+@media screen and (max-width:500px){
+    #blog-details-big-body #home-top{
+        display: none
+    }
+    #blog-details-body{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #title{
+        margin-left: 1%;
+        display: inline
+   }
+   #blog-details-avatar{
+    width:20px;
+    height: 20px;
+    border-radius: 20px
+}
+   #publisherName{
+    color:gray;
+    font-size: 90%;
+    margin-left: 3%;
+}
+ #watch-blog-author{
+     margin-left:20%;
+     color:rgb(124, 172, 53);
+     border:solid rgb(124, 172, 53) 1px;
+     border-radius: 3px;
+     padding:2px 4px
+
+ }
+ #watch-blog-author:active{
+     background-color: #ddd
+ }
+ #had-watch{
+    margin-left:20%;
+    color: white;
+    background-color: rgb(124, 172, 53);
+    border-radius: 3px;
+    padding:2px 4px
+ }
+#content h1 ,h2,h3, h4,h5,p{
+    font-size: 90%
+}
+#publish-my-pinglun{
+    margin-top:2%
+}
+#publish-my-pinglun img{
+    width:20px;
+    height: 20px;
+    border-radius: 20px
+}
+#pinglun-show img,#send-my-reply img{
+    width:20px;
+    height: 20px;
+    border-radius: 20px
+}
+#blog #content img{
+    width:100%
+}
+.reply-button,.send-reply-button{
+    margin-left: 20%;
+    margin-right: 5%;
+    background-color: rgb(191,97,114);
+    padding: 1%;
+    color:white;
+    font-size: 70%;
+    border-radius: 4px;
+    float:right
+}
+.send-reply-button{
+    background-color: rgb(17, 202, 116)
+}
+.reply-button:active{
+    background-color: #ddd;
+}
+#i-want-to-pinglun{
+    background-color:#af9fd3;
+    padding:1%;
+    border-radius:3px;
+}
+#i-want-to-pinglun:active{
+    background-color: #ddd
+}
+#send-my-reply{
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    background-color: #af9fd3;
+    padding:1.5%;
+    box-shadow: 2px 4px 10px  #999;
+   
+}
+#send-my-reply .reply-button{
+    color:white;
+    margin:0 1%;
+    font-size: 90%
+}
+#send-my-reply .reply-button:hover{
+    color:crimson
+}
+.pinglun-button{
+    float: right;
+    margin:0 2%;
+    color: white;
+    background-color: rgb(191,97,114);
+ 
+    border-radius: 4px;
+  
+}
+}

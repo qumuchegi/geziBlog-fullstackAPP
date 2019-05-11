@@ -1,0 +1,13 @@
+@media screen and (min-width:500px){
+    #collumn-editor-body{
+        margin:2% 20%
+    }
+    #column-editor-items{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+}
+@media screen and (max-width:500px){
+}

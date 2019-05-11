@@ -1,0 +1,162 @@
+@media screen and (min-width:500px){
+    #edit-body{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width:1400px
+ 
+    }
+    #edit-top{
+        display: flex;
+        justify-content: flex-start
+    }
+    #title-input{
+        padding: 1%;
+        width:1200px;
+        font-size: 130%;
+        font-weight: bolder;
+        background-color: white;
+        display: inline-block;
+    }
+    #edlit-preview{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+   
+    }
+    
+    #edit-area{
+        width:50%;
+        height: 700px;
+        border-color:white;
+        align-self: stretch
+    }
+    #editor{
+       width:100%;
+       padding:1%;
+       height:700px;
+       padding-left:2%;
+       border: none;
+       font-size: 120%;
+       background-color:   #eee;
+   
+    }
+    #preview-container{
+        align-self: stretch;
+        width:48%;
+        height: 740px;
+        border-left: solid 2px #eee;
+        box-sizing: border-box;
+     
+    }
+   #edit-blog-type{
+    width:30%;
+   }
+   #picture-upload-input{
+  
+    
+   }
+    #publish{
+       
+       
+    }
+    #pc{
+        border:solid 2px #eee;
+        width:200px;
+        color:rgb(132, 57, 236);
+        text-align: center;
+        background-color: white;
+    }
+    #pc:hover{
+        background-color: #eee
+    }
+    #mobile{
+        display: none
+    }
+    #preview{
+        margin: 0;
+        font-size: 50%;
+        background-color: white;
+        padding: 2%;
+        padding-bottom:5%;
+    }
+    #insert-picture-button{
+ 
+        color:#555;
+        padding:0.5% 2% 0.5% 2%;
+        font-size: 80%
+    }
+   
+    
+    #preview p img{
+        width: 60%
+    }
+    #edit-blog-type{
+        display: inline-block;
+        width:300px
+    }
+    #picture-input{
+        border:solid 2px #eee;
+        padding:1.5% 2%;
+        margin-right: 3%
+    }
+    #picture-input:hover{
+         color:  rgb(132, 57, 236);
+    }
+}
+@media screen and (max-width:500px){
+    #edit-body{
+        padding-bottom: 20%;
+  
+    }
+    #title-input{
+        width:90%;
+        background-color: #eee;
+        margin-bottom: 2%;
+        margin-left:5%;
+        border-radius: 5px;
+        
+    }
+    #editor{
+        width:99%;
+        background-color: #eee;
+        border-color:white;
+    }
+    #edit-area{
+        width:100%;
+        margin: 0;
+    }
+    #publish{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    #preview{
+        padding: 4%;
+        margin: 0;
+        font-size: 50%;
+    }
+    #pc{
+        display: none;
+    }
+    #insert-picture-button{
+        background-color: rgb(37, 210, 223);
+        color:white;
+        padding:0.5% 2% 0.5% 2%;
+        font-size: 80%
+    }
+    #insert-picture-button input{
+        width:15%;
+      
+    }
+    #insert-picture-button:active{
+        background-color: rgb(175,159,198)
+    }
+    
+  #preview p img{
+        width: 100%
+    }
+}

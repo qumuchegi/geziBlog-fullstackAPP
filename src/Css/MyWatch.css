@@ -1,0 +1,45 @@
+@media screen and (min-width:500px){
+    #my-watch-body{
+        margin-top: 8%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-top:2%;
+        background-color: white
+    }
+    #my-watch-authors-avatars .scroll-avatars-item img{
+        width:50px;
+        height: 50px;
+        border-radius: 50px
+
+    }
+    .scroll-avatars-item{
+        display: inline-block;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+}
+@media screen and (max-width:500px){
+    #my-watch-big-body #home-top{
+        display: none;
+    }
+    #my-watch-body{
+     
+    }
+    #my-watch-authors-avatars{
+        padding:2% 3%;
+       
+    }
+    #my-watch-authors-avatars img{
+        width:30px;
+        height: 30px;
+        border-radius: 30px
+
+    }
+     
+    .scroll-avatars-item{
+        display: inline-block;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+}
+ 

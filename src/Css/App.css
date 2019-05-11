@@ -1,0 +1,53 @@
+@media screen and (max-width:500px){
+    #tab{
+        position: fixed;
+        background-color: white;
+        left:0;
+        bottom:0;
+        right:0;
+        border-top:solid #bbb 1px;
+        padding-top:2%
+    }
+    .tabItem{
+        display: inline-block;
+        
+    }
+    body{
+        background-color: white;
+    }
+    #content{
+        
+    }
+}
+@media screen and (min-width:500px){
+    #tab{
+        position: fixed;
+        background-color: #eee;
+        left:0;
+        top:0%;
+        padding-top:2%;
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        height: 100%;
+        padding-block-end: 2%;
+        border-right: solid 1.5px #eee
+    }
+  
+    #clicked{
+        background-color: white
+    }
+    body{
+       /* background-color: #eee;
+       */
+       
+    }
+    body::-webkit-scrollbar{
+        display: none
+    } 
+    #content{
+        padding-top:9%;
+ 
+    }
+}
+

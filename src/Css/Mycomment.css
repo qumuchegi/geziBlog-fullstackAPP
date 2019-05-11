@@ -1,0 +1,48 @@
+
+@media screen and (min-width:500px){
+    #my-pinglun-body{
+        margin-top:7%;
+         margin-left: 20%;
+         margin-right: 20%
+    }
+     .my-pinglun_item{
+        background-color: white
+     }
+    .my-pinglun-content{
+        color:#222;
+        font-size: 90%;
+
+    }
+    .my-pinglun-time{
+        color:#666;
+        font-size: 80%;
+    }
+    .my-pinglun-blog-enter{
+        text-decoration: none;
+        color:#af9fd3;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:500px){
+    #my-comment-big-body #home-top{
+        display: none;
+    }
+    #my-pinglun-body{
+        padding-left:3%;
+        padding-right:3%
+    }
+     
+    .my-pinglun-content{
+        color:#222;
+        font-size: 90%;
+    }
+    .my-pinglun-time{
+        color:#666;
+        font-size: 80%;
+    }
+    .my-pinglun-blog-enter{
+        text-decoration: none;
+        color:#af9fd3;
+        margin-left: 10%;
+    }
+}

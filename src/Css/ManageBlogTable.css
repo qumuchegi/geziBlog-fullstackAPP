@@ -1,0 +1,87 @@
+@media screen and (max-width:500px){
+    table{
+        font-size: 70%;
+        width:100%;
+        border:solid 1px #aaa;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: #aaa;
+        color:white
+    }
+    table #blog-title{
+        
+    }
+    table #blog-title:hover{
+        color:rgba(189, 44, 75, 0.788);
+        cursor: pointer;
+
+    }
+    tr{
+        border:solid 2px #eee;
+    
+    }
+    tr:active{
+       background-color: #eee
+     
+    }
+    th,td{
+        text-align: center;
+        padding:0%
+        
+        
+        
+    }
+    .modify-remove{
+       
+    }
+    .modify-remove:active{
+        cursor: pointer;
+        color:rgba(189, 44, 75, 0.788);
+    }
+
+
+
+}
+@media screen and (min-width:500px){
+    table{
+        margin-top:15%;
+        width:100%;
+        border:solid 1px #aaa;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: #aaa;
+        color:white
+    }
+    table #blog-title{
+        
+    }
+    table #blog-title:hover{
+        color:rgba(189, 44, 75, 0.788);
+        cursor: pointer;
+
+    }
+    tr{
+        border:solid 2px #eee
+    }
+    tr:hover{
+       color:rgb(74, 19, 151);
+     
+    }
+    th,td{
+        text-align: center;
+        padding:1%
+        
+        
+        
+    }
+    .modify-remove{
+       
+    }
+    .modify-remove:hover{
+        cursor: pointer;
+        color:rgba(189, 44, 75, 0.788);
+    }
+
+}

@@ -1,0 +1,46 @@
+
+@media screen and (max-width:500px){
+    .bar-item{
+        display: inline-block;
+        width:33.333%;
+        text-align: center
+    }
+  
+    .clicked{
+        color:rgb(84, 27, 163)
+    }
+    .not-clicked{
+        color: #bbb;
+        
+    }
+}
+@media screen and (min-width:500px){
+    .bar-item{
+        margin-left:5%;
+        margin-top: 20%;
+        border-radius: 50px 0 0 50px;
+        padding-top:9%;
+        width:100%;
+        text-align: center;
+        
+    }
+    .bar-item:hover{
+        cursor: pointer;
+        background-color: white
+    }
+    .clicked{
+        color:rgb(84, 27, 163);
+       
+    }
+    .clicked::after{
+        content: '-';
+
+    }
+    .not-clicked{
+        color: black;
+        
+    }
+    .not-clicked::after{
+        content: '+'
+    }
+}
