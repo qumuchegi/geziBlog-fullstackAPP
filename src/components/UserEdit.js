@@ -64,13 +64,13 @@ class UserEdit extends Component{
                     <div>
                         <img src='../img/message.svg' alt='' width='30px'></img>
                     </div>
-                消息{this.state.notReadComments.length + 
+                消息{
+                    (this.state.notReadComments.length + 
                     this.state.notReadReply.length + 
                     Number(this.state.starsFromOthers.filter(i=>i.hasRead===false).length||'') +
                     Number(this.state.notReadArticleComments.length) +
                     Number(this.state.notReadArticleReplys.length)
-
-
+                    )|| ''
                     }
                 </Link>
                 <Link id='zan' to={{pathname:'/myshare'}} className='link'>

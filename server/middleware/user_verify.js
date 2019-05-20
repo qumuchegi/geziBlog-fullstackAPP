@@ -13,8 +13,9 @@ let auth = (req, res, next) => {
         try {
             // 对 token 进行校验
 
-            jwt.verify(token,secret,(err,decoded)=>{
+            jwt.verify(token,secret,{algorithm:'Hs256'},(err,decoded)=>{
                 if(err){
+                    console.log(err)
                     next(err)
                 }else{
                     console.log(decoded)

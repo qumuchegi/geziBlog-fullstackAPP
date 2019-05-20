@@ -69,7 +69,7 @@ router.post('/login',function(req,res,next){
     users.findOne({username},(err,data)=>{
         if(data){
             if(data.password===password){
-                console.log(username+'登录成功！')
+                    console.log(username+'登录成功！')
                 
                     var payload = { username:data.username, exp:Date.now() + 1000 * 60}
                     var secret = '123'
@@ -141,11 +141,15 @@ router.post('/readzan',auth,(req,res,next)=>{
  
      
     users.findOne({username:reader},(err,user)=>{
-        if(user){//这里有一个巨坑，修改不了文档里的数组中的hasRead值
+        if(user){ //这里有一个巨坑，修改不了文档里的数组中的hasRead值，下面给出了解决方案
             user.starsFromOthers.forEach(ele => {
                 ele.hasRead = true
                  
             })
+            user.markModified('starsFromOthers')
+            //在 mongoose 中修改嵌套数据时，mongoose 是无法感知到数据变化的，所以调用
+            // save（）时不会保存修改，必须调用 markModified 
+
             user.save((err,data1)=>{
                if(data1) {
                     

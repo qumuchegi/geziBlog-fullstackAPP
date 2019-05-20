@@ -92,7 +92,9 @@ class Message extends Component{
 
     }
     async hadReadZan(){
-        this.setState({ starsFromOthers:[ ]})
+        let allStarsFromOthers = [...this.state.starsFromOthers]// 拷贝对象
+        allStarsFromOthers = allStarsFromOthers.filter(e=>e.hasRead === true)
+        this.setState({ starsFromOthers:allStarsFromOthers})
         let res = await api.post( '/user/readzan',{ reader:localStorage['username']})
         if(res.code === 0){
             toast.success('已读',{autoClose:1000})
@@ -152,7 +154,7 @@ class Message extends Component{
                  <div id = 'comment-not-read'>
                    <div>
                       
-                       <h3>博客评论</h3>
+                       <h3 style={{backgroundColor:'rgba(169,163,219)',color:'white'}}>博客评论</h3>
                       
                        {
 
@@ -214,7 +216,7 @@ class Message extends Component{
                   
                    <div>
                       
-                       <h3>专栏文章评论</h3>
+                       <h3 style={{backgroundColor:'rgba(169,163,219)',color:'white'}}>专栏文章评论</h3>
                        {
                            this.state.notReadArticleComments.length !== 0 ?
                            this.state.notReadArticleComments.map((comment, index) => <div key = {j ++} className = 'comment-item'>
@@ -282,9 +284,9 @@ class Message extends Component{
                  <Else>
                      <When condition={this.state.show.search(/收到赞/) !== -1}>
                      <div id='zan-not-read'>
-                         
+                        <h3 style={{backgroundColor:'rgba(169,163,219)',color:'white'}}>未读的赞</h3>
                         {
-                            this.state.starsFromOthers.filter( s => s.hasRead === false) ? 
+                            this.state.starsFromOthers.some( s => s.hasRead === false) ? 
                                 <span 
                                     onClick = { () => this.hadReadZan()} 
                                     className = 'read-zan'>
@@ -294,8 +296,22 @@ class Message extends Component{
                             : null
                         }
                         {
+                            this.state.starsFromOthers.filter(e => e.hasRead === false)
+                            .map( zan => <div key = {o ++} className = 'praise-item'>
+                                <div className = 'praise-head'>
+                                 <span className = 'user'>*  {zan.zaner}  *赞了你的博客</span>
+                                 <span className = 'time'>{zan.time.match(/\d*-\d*-\d*/)}</span>
+                                </div>
+                                <div className = 'praise-body'>
+                                  <Link to={{pathname:'/blogdetails/'+zan.blogID}}>{zan.title}</Link>
+                                </div>
+                            </div>)
+                        }
+                        <h3 style={{backgroundColor:'rgba(169,163,219)',color:'white'}}>已读的赞</h3>
+                        {
                             this.state.starsFromOthers.length !== 0 ?
-                            this.state.starsFromOthers.map( zan => <div key = {o ++} className = 'praise-item'>
+                            this.state.starsFromOthers.filter(e => e.hasRead === true)
+                            .map( zan => <div key = {o ++} className = 'praise-item'>
                                 <div className = 'praise-head'>
                                  <span className = 'user'>*  {zan.zaner}  *赞了你的博客</span>
                                  <span className = 'time'>{zan.time.match(/\d*-\d*-\d*/)}</span>
@@ -317,7 +333,7 @@ class Message extends Component{
                      </When>
                      <When condition={this.state.show.search(/回复我的/) !== -1 }>
                      <div id='reply-not-read'>
-                           <h3>博客评论下的回复</h3>
+                           <h3 style={{backgroundColor:'rgba(169,163,219)',color:'white'}}>博客评论下的回复</h3>
                             {
                                 this.state.notReadReplys.length !== 0 ?
                                 this.state.notReadReplys.map(( reply, index ) => <div key = {p ++} className = 'comment-item'>
@@ -374,7 +390,7 @@ class Message extends Component{
                             }
                      </div>
                      <div>
-                         <h3>专栏文章评论下的回复</h3>
+                         <h3 style={{backgroundColor:'rgba(169,163,219)',color:'white'}}>专栏文章评论下的回复</h3>
                          {
                              this.state.notReadArticleReplys.length !== 0 ?
                              this.state.notReadArticleReplys.map((reply, index) => <div key = {y ++} className = 'comment-item'>
